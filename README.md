@@ -1,0 +1,1 @@
+These are two COMSOL program files to simulate the laser-generated heat transfer in vitrified EM grids descriped in the paper titled : '  Effects of base temperature, immersion medium, and EM grid material on devitrification thresholds in cryogenic optical super-resolution microscopy'. Citation: to be mentioned.
