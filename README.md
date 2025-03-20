@@ -4,13 +4,13 @@ These are two COMSOL program files to simulate the laser-generated heat transfer
 
 * Simulation parameters:
 
- -mesh size, support film thickness, ice thickness, heat conductivities, peak laser intensity, etc, are defined in the parameter table under:
+ - mesh size, support film thickness, ice thickness, heat conductivities, peak laser intensity, etc, are defined in the parameter table under:
 Global Definitions/Parameters.
 
--The Gaussian beam profile is named ‘GaussianBeam’ and is defined under: 
+- The Gaussian beam profile is named ‘GaussianBeam’ and is defined under: 
 Component/Definitions/analytic.
 
--The Gaussian distribution is fed in laser expression named ‘LaserHeat’ and is defined under:
+- The Gaussian distribution is fed in laser expression named ‘LaserHeat’ and is defined under:
 Component/Definitions/variables.
 
 
@@ -18,7 +18,7 @@ Component/Definitions/variables.
 
 The geometry is defined as follows:
 
-1-The support film empty hole specified by hole/ice radius named ‘iceRad’ under:
+1- The support film empty hole specified by hole/ice radius named ‘iceRad’ under:
 Geometry: work plane: plane geometry: circle. 
 
 2- making an array of holes under: work plane: transform: Array; where the number of holes along x and y directions as well as the displacement between hole-to-hole centers named ‘iceSpacing’ is specified.
@@ -38,13 +38,14 @@ Note 2: In the case of heat transfer simulation in HFE-7200 (cryo-immersion), th
 * Physics:
 
 The physics module used is ‘heat transfer in solids (ht)’. The boundary condition for the geometry in nitrogen gas and base temperature of 77 K is defined as:
-1-The initial temperature is set under: Initial values: Physics/Domains/Initial values.
 
-2-The fixed temperatures at the surrounding surfaces of support film and ice are set under: Physics/Boundaries/Temperature.
+1- The initial temperature is set under: Initial values: Physics/Domains/Initial values.
+
+2- The fixed temperatures at the surrounding surfaces of support film and ice are set under: Physics/Boundaries/Temperature.
 
 3- The convective heat transfer is defined as ‘convective heat flux’ at the upper and lower surfaces of the geometry, a constant coefficient ‘h’, and external temperature ‘ T_ext’ under: Physics/Boundaries/Heat Flux. H is set to zero for the simulation of the vacuum cryostats.
 
-4-The laser-generated heat source is defined as ‘laserHeat/(supportThick+iceThick)’. (laserHeat was already defined under ‘Definitions’).
+4- The laser-generated heat source is defined as ‘laserHeat/(supportThick+iceThick)’. (laserHeat was already defined under ‘Definitions’).
 
 Note 3: In the case of heat transfer simulation in HFE-7200 (cryo-immersion), we assume that the objective lens and the sample holder are infinitely spread parallel surfaces facing each other compared to the simulated small grid square. To ensure a temperature gradient from the warm objective (173 K) to the cold specimen holder (133 K), we define periodic boundary conditions at the opposite side surfaces of HFE-7200 and glass coverslip domains.
 
