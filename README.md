@@ -2,7 +2,7 @@ These are two COMSOL program files to simulate the laser-generated heat transfer
 
 **How to use the heat transfer simulation program**:
 
-* The simulation parameters:
+* Simulation parameters:
 
  -mesh size, support film thickness, ice thickness, heat conductivities, peak laser intensity, etc, are defined in the parameter table under:
 Global Definitions/Parameters.
@@ -56,9 +56,9 @@ We calculate the temperature for different laser intensities and different light
 
 * Results:
 
-- The maximum temperature value in the ice layer under: Results/More Derived Values/Volume maximum is considered to assess the devitrification laser intensity.
+The maximum temperature value in the ice layer under: Results/More Derived Values/Volume maximum is considered to assess the devitrification laser intensity.
 
-- To interpret the temperature distributions, one can define the desired directions/lines under: Results/Cut Line 3D. Secondly, the temperature distribution can be plotted against the defined lines under: Results/1D plot groups/Line Graph.
+To interpret the temperature distributions, one can define the desired directions/lines under: Results/Cut Line 3D. Secondly, the temperature distribution can be plotted against the defined lines under: Results/1D plot groups/Line Graph.
 
 
  
