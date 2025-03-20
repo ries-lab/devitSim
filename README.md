@@ -2,7 +2,7 @@ These are two COMSOL program files to simulate the laser-generated heat transfer
 
 **How to use the heat transfer simulation program**:
 
--The simulation parameters:
+**.** The simulation parameters:
 
  -mesh size, support film thickness, ice thickness, heat conductivities, peak laser intensity, etc, are defined in the parameter table under:
 Global Definitions/Parameters.
