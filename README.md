@@ -4,19 +4,18 @@ These are two COMSOL program files to simulate the laser-generated heat transfer
 
 * Simulation parameters:
 
- - mesh size, support film thickness, ice thickness, heat conductivities, peak laser intensity, etc, are defined in the parameter table under:
+1- mesh size, support film thickness, ice thickness, heat conductivities, peak laser intensity, etc, are defined in the parameter table under:
 Global Definitions/Parameters.
 
-- The Gaussian beam profile is named ‘GaussianBeam’ and is defined under: 
+2- The Gaussian beam profile is named ‘GaussianBeam’ and is defined under: 
 Component/Definitions/analytic.
 
-- The Gaussian distribution is fed in laser expression named ‘LaserHeat’ and is defined under:
+3- The Gaussian distribution is fed in laser expression named ‘LaserHeat’ and is defined under:
 Component/Definitions/variables.
 
 
-* Geometry:
+* Geometry definition:
 
-The geometry is defined as follows:
 
 1- The support film empty hole specified by hole/ice radius named ‘iceRad’ under:
 Geometry: work plane: plane geometry: circle. 
@@ -50,9 +49,11 @@ The physics module used is ‘heat transfer in solids (ht)’. The boundary cond
 Note 3: In the case of heat transfer simulation in HFE-7200 (cryo-immersion), we assume that the objective lens and the sample holder are infinitely spread parallel surfaces facing each other compared to the simulated small grid square. To ensure a temperature gradient from the warm objective (173 K) to the cold specimen holder (133 K), we define periodic boundary conditions at the opposite side surfaces of HFE-7200 and glass coverslip domains.
 
 * Mesh:
+  
 ‘Physics-controlled mesh’ was selected based on free tetrahedral physics with a normal element size.
 
 * Study:
+  
 We calculate the temperature for different laser intensities and different light absorption coefficients at one run under Study/Parametric sweep where parameter names and values (for instance, laser intensity: ‘laserInt’ and gold film absorption at 488 nm: ‘goldAbs488’) can be set.
 
 * Results:
