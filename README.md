@@ -33,7 +33,7 @@ Note 1: depending on the support film material, this parameter needs to be set i
 
 6- a homogenous flat ice layer with the same lateral size as the support film and the thickness of ‘iceThick’ is defined on top of the support film under: Geometry/Block.
 
-Note 2: In the case of heat transfer simulation in HFE-7200 (cryo-immersion), the additional material layers, i.e., glass coverslip and HFE-7200 (considered as solid at 133 K), are added to the geometry as ‘Blocks’ with corresponding thicknesses mentioned for Fig. 1c.
+- Note 2: In the case of heat transfer simulation in HFE-7200 (cryo-immersion), the additional material layers, i.e., glass coverslip and HFE-7200 (considered as solid at 133 K), are added to the geometry as ‘Blocks’ with corresponding thicknesses mentioned for Fig. 1c.
 
 * Physics:
 
@@ -46,7 +46,7 @@ The physics module used is ‘heat transfer in solids (ht)’. The boundary cond
 
 4-The laser-generated heat source is defined as ‘laserHeat/(supportThick+iceThick)’. (laserHeat was already defined under ‘Definitions’).
 
--  Note 3: In the case of heat transfer simulation in HFE-7200 (cryo-immersion), we assume that the objective lens and the sample holder are infinitely spread parallel surfaces facing each other compared to the simulated small grid square. To ensure a temperature gradient from the warm objective (173 K) to the cold specimen holder (133 K), we define periodic boundary conditions at the opposite side surfaces of HFE-7200 and glass coverslip domains.
+- Note 3: In the case of heat transfer simulation in HFE-7200 (cryo-immersion), we assume that the objective lens and the sample holder are infinitely spread parallel surfaces facing each other compared to the simulated small grid square. To ensure a temperature gradient from the warm objective (173 K) to the cold specimen holder (133 K), we define periodic boundary conditions at the opposite side surfaces of HFE-7200 and glass coverslip domains.
 
 * Mesh:
 ‘Physics-controlled mesh’ was selected based on free tetrahedral physics with a normal element size.
@@ -56,9 +56,9 @@ We calculate the temperature for different laser intensities and different light
 
 * Results:
 
-The maximum temperature value in the ice layer under: Results/More Derived Values/Volume maximum is considered to assess the devitrification laser intensity.
+- The maximum temperature value in the ice layer under: Results/More Derived Values/Volume maximum is considered to assess the devitrification laser intensity.
 
-To interpret the temperature distributions, one can define the desired directions/lines under: Results/Cut Line 3D. Secondly, the temperature distribution can be plotted against the defined lines under: Results/1D plot groups/Line Graph.
+- To interpret the temperature distributions, one can define the desired directions/lines under: Results/Cut Line 3D. Secondly, the temperature distribution can be plotted against the defined lines under: Results/1D plot groups/Line Graph.
 
 
  
